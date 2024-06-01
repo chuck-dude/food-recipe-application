@@ -1,0 +1,200 @@
+/* Alternatively, you can use Google Fonts for a wider range of fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.card{
+  border:1px solid hsl(0,0%,80%);
+  border-radius: 10px;
+  box-shadow:5px 5px 5px hsla(0, 0%, 0%, 0.1);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  max-width: 250px;
+  display: inline-block;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for transform and box-shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+  transform: scale(1.02); /* Increase the size of the card by 10% when hovered */
+  box-shadow: 0 4px 8px rgba(58, 56, 56, 0.82); /* Add glowing effect to the box shadow */
+}
+
+.card img,
+.card h3,
+.card p,
+.card button {
+  transition: transform 0.3s ease; /* Add transition for transform */
+}
+
+.card:hover img,
+.card:hover h3,
+.card:hover p,
+.card:hover button {
+  transform: scale(1.02); /* Increase the size of the card contents by 10% when hovered */
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.card .card-img{
+  max-width :60%;
+  height: auto;
+  border-radius:50%;
+  margin-bottom:10px ;
+}
+.card .card-title{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: hsl(0, 0%, 20%);
+}
+.card .card-text{
+  font-family: Arial,sans-serif;
+  color: hsl(0, 0%, 32%);
+}
+.food-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.food-item {
+  flex: 0 0 20%;
+  padding: 10px;
+}
+
+@media (max-width: 1200px) {
+ .food-item {
+    flex: 0 0 25%;
+  }
+}
+
+@media (max-width: 992px) {
+ .food-item {
+    flex: 0 0 33.33%;
+  }
+}
+
+@media (max-width: 768px) {
+ .food-item {
+    flex: 0 0 50%;
+  }
+}
+
+@media (max-width: 480px) {
+ .food-item {
+    flex: 0 0 100%;
+  }
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  background-color: #2e5d39;
+}
+
+body {
+  background-color: #F5F5DC; /* Use beige as the default background color */
+}
+
+hr {
+  border: none;
+  border-color: darksalmon;
+  height: 3px;
+  background-color: hsl(0, 0%, 33%); /* Darker horizontal rule color */
+  margin: 20px 0; /* Add some vertical spacing */
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+button[type="submit"] {
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.header-food {
+  text-align: center;
+  background: linear-gradient(to right, #ff0000, #ffccff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-size: 36px;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.loading-indicator {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes loading {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.meal-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.meal-card img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.meal-card h1,
+.meal-card h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.meal-card h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.meal-card h4 {
+  font-size: 16px;
+  color: #666;
+}
+
+.meal-card p {
+  margin-top: 10px;
+  text-align: justify;
+}
